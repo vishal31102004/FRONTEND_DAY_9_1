@@ -23,7 +23,7 @@ const CreateUser = () => {
         e.preventDefault();
         try {
           // Replace with your backend API endpoint
-          const response = await axios.post("http://localhost:3001/user/createuser", formData);
+          const response = await axios.post("https://backend-day-9-2.onrender.com/user/createuser", formData);
           setMessage(response.data.message || "User created successfully!");
         } catch (error) {
           console.error("Error creating user:", error);

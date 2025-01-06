@@ -13,7 +13,7 @@ const User = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/user/fetch", {
+      const response = await axios.get("https://backend-day-9-2.onrender.com/user/fetch", {
         responseType: "json",
       });
       setUser(response.data.users);
@@ -31,7 +31,7 @@ const User = () => {
     if (!confirmDelete) return;
 
     try {
-      const response = await axios.delete(`http://localhost:3001/user/deleteuser/${id}`);
+      const response = await axios.delete(`https://backend-day-9-2.onrender.com/user/deleteuser/${id}`);
       alert(response.data.message);
       // Remove deleted user from the state
       setUser(users.filter((user) => user._id !== id));

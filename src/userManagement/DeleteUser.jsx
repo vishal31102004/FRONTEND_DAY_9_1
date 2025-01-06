@@ -11,7 +11,7 @@ const DeleteUser = () => {
         }
 
         try {
-            const response = await axios.delete(`http://localhost:3001/user/deleteuser/${userId}`);
+            const response = await axios.delete(`https://backend-day-9-2.onrender.com/user/deleteuser/${userId}`);
             alert(response.data.message);
         } catch (error) {
             console.error('Error deleting user:', error);

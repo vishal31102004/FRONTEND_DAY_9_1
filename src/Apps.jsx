@@ -24,21 +24,6 @@ const Apps = () => {
                                 <Link to="/create">Create User</Link>
                             </li>
                         </div>
-                        <div className="op-container">
-                            <li>
-                                <Link to="/update">Update User</Link>
-                            </li>
-                        </div>
-                        <div className="op-container">
-                            <li>
-                                <Link to="/search">Search User</Link>
-                            </li>
-                        </div>
-                        <div className="op-container">
-                            <li>
-                                <Link to="/delete">Delete User</Link>
-                            </li>
-                        </div>
                         
                     </ul>
                 </div>

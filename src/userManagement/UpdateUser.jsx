@@ -13,7 +13,7 @@ const UpdateUser = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/user/searchuser/${id}`);
+        const response = await axios.get(`https://backend-day-9-2.onrender.com/user/searchuser/${id}`);
         if (response.data && response.data.foundUser) {
           setUser(response.data.foundUser); // Set the user data into state
         } else {
@@ -43,7 +43,7 @@ const UpdateUser = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:3001/user/updateuser/${id}`,
+        `https://backend-day-9-2.onrender.com/user/updateuser/${id}`,
         user  // Send the updated user data
       );
       alert(response.data.message || "User updated successfully!");
